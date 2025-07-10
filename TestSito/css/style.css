@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  nav {
+    font-family: helvetica;
+    text-align: center;
+    border-radius: 16px;
+    backdrop-filter: blur(120px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  main {
+    padding: 2rem;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin: 2rem 0;
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.15);           /* vetro chiaro */
+    border-radius: 24px;
+    backdrop-filter: blur(120px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px groove rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  .animated-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background: linear-gradient(115deg,#021caf, #ff0000, #b459ff, #210d33);
+    background-size: 600% 600%;
+    animation: animateGradient 20s ease infinite;
+    filter: blur(0px);
+    opacity: 1;
+  }
+  
+  @keyframes animateGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+    
